@@ -2,13 +2,11 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Formularios</title>
+    <title>Formulario</title>
   </head>
   <body>
-    <form
-      action="https://www.youtube.com/results?search_query="
-      target="_blank"
-    >
+    <!--Recuerda que el name "search_Query" es un parámetro que el metodo form y get concatenan a la URL de forma automática. En este caso el parámetro de busqueda de Youtube se llama así para otra página debes de usar el nomnbre de los parámetros correspondientes-->
+    <form action="https://www.youtube.com/results" method="GET">
       <label for="searchInput">Buscar en Youtube:</label>
       <input
         type="text"
