@@ -1,50 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Videojuegos</title>
-  </head>
-  <body>
-    <!--Para poder todo el contenido visual-->
-    <h1>Videojuegos Hub</h1>
-    <span> <p>Creado por Giusstation3 <a href=https://github.com>GitHub<a> </p> </span>
-    <hr/>
-    <div>
-      <p>
-        Bienvenido a Videojuegos Hub.<br />El mejor lugar para registrar y
-        consultar los videojuegos que has jugado.
-      </p>
-    </div>
-    <div>
-      <nav>
-        <ul>
-          <li>The Last Of Us</li>
-        </ul>
-        <ul>
-          <li>Mario Maker</li>
-        </ul>
-        <ul>
-          <li>Unrailed</li>
-        </ul>
-        <ul>
-          <li>Spider-man PS5</li>
-        </ul>
-        <ul>
-          <li>Peak</li>
-        </ul>
-      <nav>
-    </div>
-    <div>
-        <h5>The Last of Us</h5>
-        <p>The Last of Us es uno de los mejores juegos de la generación PS3. Es un gran juego con mecánicas inovadoras. <br> 
-        Es un juego que marcó mi desarrollo como Gamer y terminó de asentar mi gusto por los videojuegos. <b>10/10</b></p>
-         <h5>Mario Maker</h5>
-        <p>Mario Maker es uno de los títulos más creativos de Nintendo. Es un gran juego que permite construir y compartir niveles únicos. Es un juego que me enseñó a apreciar la creatividad de la comunidad y a experimentar con mis propias ideas.<b>10/10</b></p>
-         <h5>Unrailed</h5>
-        <p>Unrailed es un juego cooperativo caótico y muy divertido. Es un gran juego que exige trabajo en equipo y comunicación constante. Es un juego que me mostró la importancia de la coordinación y la paciencia en los videojuegos multijugador.<b>10/10</b></p>
-         <h5>Spider-man PS5</h5>
-        <p>Spiderman PS5 es una de las mejores experiencias de superhéroes en videojuegos. Es un gran juego con gráficos impresionantes y combates fluidos. Es un juego que me hizo sentir como el verdadero Spider-Man y disfrutar cada momento en la ciudad.<b>10/10</b></p>
-    </div>
-  </body>
-  <!--Remember that comments are typed this way.-->
+    <head>
+        <meta charset="UTF-8">
+        <!--recuerda evitar trailing slash on void elements porque al validar con w3.org sale ese comentario-->
+        <meta name="description" content="¿Quién fue Leonardo Da Vinci?"/> 
+        <meta name="author" content="Giuseppe Valencia"/>
+        <title>Proyecto Da Vinci</title>
+    <!-- Google Fonts link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <!--Recuerda que siempre el style.css va hasta el final-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body  class="fondo">
+        <header>
+            <h1>El hombre más creativo que ha vivido</h1>
+            <!--Recuerda que es buena práctica ponerle id a los elementos para poder identificarlos mejor-->
+            <div id="menu_principal" class="menu"> 
+                <nav>
+                    <ul>
+                        <li><a href="#biografia">Biografía</a></li> 
+                        <li><a href="#inventos">Inventos</a></li>
+                        <li><a href="#obras">Obras destacadas</a></li>
+                        <li>
+                            <!--añadimos target="_blank" para que lo abra en otra tab-->
+                            <a href="https://www.youtube.com/watch?v=-f0ym3CtleQ&list=PLI3DKgG2EqzvsgIQbpVqAHmlzwMVzGrju" target="_blank">Videos interesantes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section id="biografia">
+                <h2>Biografía</h2>
+                <p>Leonardo da Vinci, nacido el 15 de abril de 1452 en Vinci, Italia, fue hijo ilegítimo de Piero da Vinci, notario florentino, y de Caterina di Meo Lippi, una mujer de origen humilde. Desde el inicio de su vida estuvo marcado por esta condición, ya que no formó parte del mismo entorno social que su padre, lo que influyó en su carácter independiente y curioso. La tradición señala que pudo haber nacido en Anchiano, un pequeño caserío cercano, aunque también existe la posibilidad de que viniera al mundo en una casa en Florencia que pertenecía a su familia paterna.</p>
+                <p>Tras su nacimiento, sus padres siguieron caminos distintos: Piero contrajo matrimonio con Albiera Amadori y, después de enviudar, volvió a casarse en varias ocasiones. Caterina, por su parte, se unió a un artesano local, Antonio di Piero Buti del Vacca, conocido como “L’Accattabriga”. Leonardo creció en medio de esta compleja red familiar, en la que llegó a tener hasta dieciséis medio hermanos, de los cuales once sobrevivieron a la infancia. La diferencia de edad era considerable, pues el último de ellos nació cuando Leonardo ya tenía 46 años, lo que explica por qué tuvo muy poco contacto con ellos a lo largo de su vida.</p>
+                <p>A pesar de estas circunstancias, Leonardo recibió educación básica en lectura, escritura y matemáticas, y desde muy joven mostró un talento excepcional para el dibujo y la observación de la naturaleza. Estas cualidades lo acompañarían siempre, consolidando su figura como un hombre adelantado a su tiempo, que exploró con la misma pasión el arte, la ciencia, la ingeniería y la filosofía.</p>
+            </section>
+            <section id="inventos">
+                <h2>Inventos</h2>
+                <p>Leonardo da Vinci no solo fue un artista brillante, también destacó como un inventor visionario. Desde muy joven comenzó a diseñar máquinas que parecían imposibles para su época, inspirándose tanto en la naturaleza como en las necesidades militares y civiles de su tiempo. Sus cuadernos contienen bocetos detallados de ingenios voladores, mecanismos hidráulicos y sistemas de engranajes que demuestran una comprensión avanzada de la física y la mecánica.</p>
+                <p>Entre sus proyectos más conocidos se encuentra la máquina voladora, basada en el estudio del vuelo de los pájaros, y que anticipaba el desarrollo de la aviación siglos más tarde. También ideó un vehículo blindado que puede considerarse un antecesor del tanque moderno, así como un puente portátil diseñado para usarse en campañas militares. Aunque muchas de estas creaciones nunca fueron construidas en vida de Leonardo, revelan su inagotable capacidad de imaginar soluciones que desafiaban los límites de su tiempo.</p>
+                <p>La variedad de sus inventos abarca desde artefactos bélicos hasta dispositivos de uso civil, como máquinas para excavar canales, sistemas de riego o herramientas para mejorar la producción artesanal. Esta amplitud de intereses muestra a un hombre que concebía la tecnología como un medio para transformar la vida humana. Sus inventos, plasmados en miles de páginas de apuntes, reflejan la fusión de arte y ciencia que caracteriza su legado, y continúan inspirando a ingenieros y creadores en la actualidad.</p>
+            </section>
+            <section id="obras">
+                <h2>Obras de Arte</h2>
+                <p>Leonardo da Vinci dejó una huella imborrable en la historia del arte gracias a sus pinturas, que combinaron una técnica refinada con una profunda comprensión de la anatomía y la luz. Sus obras muestran un equilibrio entre precisión científica y sensibilidad artística, logrando transmitir emociones y captar la esencia de lo humano. Su dominio del sfumato, una técnica que difumina los contornos para crear transiciones suaves, revolucionó la manera en que se concebía la pintura renacentista.</p>
+                <p>Entre sus obras más reconocidas se encuentra la Mona Lisa, cuyo enigmático gesto ha fascinado a generaciones enteras, y La Última Cena, un fresco que capta con dramatismo el momento en que Jesús anuncia la traición de uno de sus discípulos. Estas piezas no solo destacan por su belleza, sino también por la innovación en la composición y el manejo del espacio, lo que demuestra la capacidad de Leonardo para pensar más allá de las convenciones de su tiempo.</p>
+                <p>A lo largo de su vida, también realizó numerosos bocetos, retratos y estudios que revelan su constante búsqueda por comprender la naturaleza y el cuerpo humano. Aunque muchas de sus obras quedaron inacabadas, cada una refleja su perfeccionismo y su obsesión por explorar nuevas formas de expresión. El legado artístico de Leonardo continúa inspirando a artistas y admiradores de todo el mundo, consolidándolo como uno de los genios más influyentes del Renacimiento.</p>
+                <h3>Obras más famosas</h3>
+                <ol>
+                    <li>
+                        <article>
+                            <h4>Mona Lisa</h4>
+                            <p>Retrato de Lisa Gherardini, famosa por su enigmática sonrisa y su técnica de sfumato. Es la obra más reconocida de Leonardo y uno de los íconos del arte mundial.</p>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mona_Lisa.jpg?width=600" alt="Retrato de la mona lisa sonriendo al espectador" width="150">
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4>La Última Cena</h4>
+                            <p>Un fresco que representa el momento en que Jesús anuncia que uno de sus discípulos lo traicionará. Destaca por su composición y la expresión de las emociones de cada personaje.</p>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C3%9Altima_Cena_-_Da_Vinci_5.jpg?width=600" alt="Óleo de la última cena con jesus y sus discípulos" width="150">
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4>La Virgen de las Rocas</h4>
+                            <!--Noté que reducir el tamaño que tomaba de wikipedia commons ayudaba a que si cargara la imagen-->
+                            <!--Desconozco porque usar el file url con esta imagen en particular funcionó meintras que con la liga url de la imagen no funcionaba-->
+                            <p>Obra con dos versiones (Louvre y National Gallery) que muestra a la Virgen María, el niño Jesús, Juan Bautista y un ángel en un paisaje rocoso, destacando el uso de luz y sombras.</p>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg" alt="Virgen ángel niños paisaje rocoso" width="150">
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4>La Dama del Armiño</h4>
+                            <p>Retrato de Cecilia Gallerani sosteniendo un armiño. Es considerado uno de los primeros retratos modernos por la naturalidad de la pose y la expresión.</p>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dama_z_gronostajem.jpg?width=600" alt="Retrado de la dama del armiño sosteniendo un hurón" width="150">
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4>San Juan Bautista</h4>
+                            <p>Óleo que representa a Juan el Bautista en soledad, señalando al cielo, símbolo de su papel como profeta. Destaca el contraste entre luz y oscuridad característico de Leonardo.</p>
+                            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg?width=600" alt="San Juan señalando hacia cielo y mirando al espectador" width="150">
+                        </article>
+                    </li>
+                </ol>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <section>
+                <h2>Suscríbete a nuestro Newsletter!</h2>
+                <p>Recibe en tu correo las últimas noticias, curiosidades y contenidos exclusivos sobre Leonardo Da Vinci.</p>
+                 <!--Id descriptiva para el email y además podemos poner "#" -->
+                <form action="#" method="post" target="_blank">
+                    <label for="emailInput">Correo electrónico:</label>
+                    <input
+                        type="email"
+                        id="emailInput"
+                        name="email"
+                        placeholder="tu@email.com"
+                        spellcheck="false"
+                        autocomplete="off"
+                        required
+                    >
+                    <!--Recuerda que es posible agregar type submit al button para darle semantica-->
+                    <button class=submitButton type="submit">Suscribirme</button>
+                </form>
+            </section>
+            <section id="creditos">
+                <h2>Créditos</h2>
+                <p>Página creada por <span>Giusstation3</span>. Todos los derechos reservados. 2025</p>
+            </section>
+        </footer>
+    </body>
 </html>
