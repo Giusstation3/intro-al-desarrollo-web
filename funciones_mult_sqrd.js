@@ -10,7 +10,6 @@ function sqrd_classic(num1){
 	return num1*num1;
 }
 
-}
 
 const sqrd_arrow= (num1) => {
   return num1*num1;
