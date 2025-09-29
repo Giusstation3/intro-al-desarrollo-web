@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Página web con un formulario para rellenar información de contacto" /> 
+    <meta name="author" content="Giuseppe Valencia" />
+    <script src="script.js"></script>
+    <title>Formulario Web con Javascript</title>
+  </head>
+  <body>
+    <h1>Formulario de día favorito</h1>
+    <form method="POST" onsubmit="return false">
+      <section>
+        <p><strong>Rellena la información</strong></p>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" />
+        </div>
+        <div>
+          <label for="edad">Edad:</label>
+          <input type="number" id="edad" name="edad" />
+        </div>
+        <div>
+          <label for="diaFavorito">Día favorito:</label>
+          <select id="diaFavorito" name="diaFavorito">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miércoles">Miércoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+            <option value="Sábado">Sábado</option>
+            <option value="Domingo">Domingo</option>
+          </select>
+        </div>
+      </section>
+      <div>
+        <input type="submit" value="Enviar" onclick="guardarInfor()"/>
+      </div>
+    </form>
+    <p id="resultado"></p>
+  </body>
+</html>
