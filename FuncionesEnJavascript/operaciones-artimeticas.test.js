@@ -9,13 +9,11 @@ test("Debe restar dos números correctamente", () => {
   expect(restar(10, 7)).toBe(3);
 });
 
+//haciendo una prueba pero ahora con .toThrow
 test("Debe lanzar un error al dividir entre cero", () => {
-  try {
-    dividir(10, 0);
-  } catch (e) {
-    expect(e.message).toBe("No se puede dividir entre cero :(");
-  }
+  expect(() => dividir(10, 0)).toThrow("No se puede dividir entre cero :(");
 });
+
 
 test("debe obtener el modulo de dos números", () => {
     expect(modulo(10,2)).toBe(0);
