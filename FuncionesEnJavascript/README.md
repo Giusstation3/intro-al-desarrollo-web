@@ -27,3 +27,7 @@ Permite probar casos donde el código debería fallar, por ejemplo divisiones en
 **.toStrictEqual()**  
 Compara valores asegurando que coincidan en contenido, tipo de datos y estructura exacta.  
 Es más estricto que .toEqual() porque detecta diferencias como propiedades faltantes o tipos distintos.
+
+![Pruebas unitarias](image.png)
+
+![Pruebas unitarias 2](image-1.png)
